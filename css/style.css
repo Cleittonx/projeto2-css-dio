@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    display: grid;
+    grid-template-areas: 
+    "header header header header header"
+    "sidebar main main main main"
+    "sidebar main main main main";
+    grid-gap: 1rem;
+    grid-template-columns: 218px auto auto auto auto;
+    grid-template-rows: 56px 100vh auto auto auto;
+}
+
+header {
+    grid-area: header;
+    height: 56px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+#perfil-channel {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+}
+
+.menu-left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 1rem;
+}
+
+.youtube-logo {
+    padding-left: 1.5rem;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-input {
+    width: 25rem;
+    height: 2.5rem;
+    padding-left: 1rem;
+}
+
+.search-btn {
+    width: 3.5rem;
+    height: 2.5rem;
+}
+
+.menu-icons {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 24px 0 24px;
+    align-items: center;
+    gap: 25px;
+}
+
+.btns-actions {
+    display: flex;
+    flex-direction: column;
+    margin-left: .5rem;
+    margin-top: .75rem;
+    align-items: start;
+    gap: 22px;
+}
+
+aside {
+    grid-area: sidebar;
+}
+
+.home-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    font-weight: 600;
+}
+
+.home-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    background: url('images/home.png') no-repeat center center;
+    background-size: cover;
+}
+
+.explorer-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    font-weight: 400;
+}
+
+.explorer-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    background: url('images/explorar.png') no-repeat center center;
+    background-size: cover;
+}
+
+.subscribes-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    font-weight: 400;
+}
+
+.subscribes-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    background: url('images/inscrições.png') no-repeat center center;
+    background-size: cover;
+}
+
+.music-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    font-weight: 400;
+}
+
+.music-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    background: url('images/youtube\ music.png') no-repeat center center;
+    background-size: cover;
+}
+
+.like-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    font-weight: 400;
+}
+
+.like-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    background: url('images/like.png') no-repeat center center;
+    background-size: cover;
+}
+
+.watch-later-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    font-weight: 400;
+}
+
+.watch-later-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    background: url('images/assistir\ mais\ tarde.png') no-repeat center center;
+    background-size: cover;
+}
+
+.downloads-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    font-weight: 400;
+}
+
+.downloads-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    background: url('images/downloads.png') no-repeat center center;
+    background-size: cover;
+}
+
+.film-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    font-weight: 400;
+}
+
+.film-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    background: url('images/filmes.png') no-repeat center center;
+    background-size: cover;
+}
+
+.learn-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    font-weight: 400;
+}
+
+.learn-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    background: url('images/aprender.png') no-repeat center center;
+    background-size: cover;
+}
+
+.sports-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+    font-weight: 400;
+}
+
+.sports-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    background: url('images/aprender.png') no-repeat center center;
+    background-size: cover;
+}
+
+main {
+    grid-area: main;
+    padding: 3rem;
+    background-color: rgb(254, 250, 254);
+    gap: 3rem;
+}
+
+.video-section {
+    width: 282px;
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-template-rows: repeat(3, auto);
+    gap: 3rem;
+}
+
+.thumbnail-image {
+    width: 250px;
+}
+
+.video-bottom-section {
+    width: 43px;
+}
+
+.video-details {
+    display: grid;
+    grid-template-columns: 43px auto;
+    gap: .50rem;
+}
+
+.video-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: black;
+}
+
+p {
+    margin-top: .75rem;
+    font-size: 12px;
+    font-weight: 400;
+    color: #515151;
+    line-height: 14.06px;
+}
